@@ -1,4 +1,43 @@
-1. my first project.
-2. 한글테스트...
-3. version amend
-4. setting : ssh remote
+1. git init
+    .git init (dlrectory)
+    .git --global user.name csjang
+    .git --global user.email csjang@outlook.com
+    .git status
+
+2. file add
+    .git add "file-name" 
+    .git rm --cache "file-name"
+    .git commit -m "0.0.01"
+    .git commit -amend
+    .git log 
+    .git log --reverse
+    .git diff
+
+3. branch
+    .git branch
+    .git branch "branch-name"
+    .git branch -d "branch-name"
+    .git branch -D "branch_name"
+    .git checkout "branch-name"
+    .git branch -b "branch-name"
+    .git log "branch-name-1".."branch-name2"
+    .git diff "branch-name-1".."branch-name2"
+    .git log --branches --decorate --graph --oneline
+    .git merge "branch_name"
+    .git stash (save)
+    .git stash apply
+
+4. remote
+    .git cron https://github.com/csjang/nodejs.git (directory)
+    .git checkout "hash-code"
+    .git remote add origin https://github.com/csjang/nodejs.git => https
+    .git remote add origin git@github.com:csjang/nodejs.git => stash
+    .git remote remove "remote-name"
+    .git remote -v
+    .git push -u origin master
+    .git push
+    .git pull
+
+5. SSH Login
+    .ssh-keyget in PC
+    .cd ~"userid"/.ssh -> id_rsa.pub register in github
